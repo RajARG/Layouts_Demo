@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/y_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/x_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="420dp" />
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@android:color/black"
+
+        android:text="@string/tv1"
+        android:gravity="center"
+        android:textColor="#318214"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLeft"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@android:color/black"
+
+        android:gravity="center"
+        android:text="@string/tv2"
+        android:textColor="#318214"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/x_axis"
+        app:layout_constraintRight_toRightOf="@id/y_axis"
+        />
+
+    <TextView
+        android:id="@+id/textViewRight"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@android:color/black"
+
+        android:gravity="center"
+        android:text="@string/tv3"
+        android:textColor="#318214"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/clickButton2"
+        app:layout_constraintLeft_toLeftOf="@id/textViewLeft"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewLeft" />
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+
+        android:text="@string/click_button"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="@id/textViewLeft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTop"
+
+        />
+
+    <Button
+        android:id="@+id/clickButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+
+        android:text="@string/click_button"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewRight"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

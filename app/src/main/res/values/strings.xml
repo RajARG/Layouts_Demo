@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Layouts Demo</string>
+    <string name="click_button">Switch</string>
+    <string name="tv1">A</string>
+    <string name="tv2">B</string>
+    <string name="tv3">C</string>
+    <string name="tv4">D</string>
+</resources>
