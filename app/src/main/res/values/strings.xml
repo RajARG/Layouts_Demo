@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Layouts Demo</string>
     <string name="click_button">Switch</string>
+    <string name="tv0">---</string>
     <string name="tv1">A</string>
     <string name="tv2">B</string>
     <string name="tv3">C</string>
     <string name="tv4">D</string>
+    <string name="tv5">E</string>
+    <string name="paragraph">The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. Ding  A single lap should be completed each time you hear this sound. Ding  Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, ding </string>
 </resources>
